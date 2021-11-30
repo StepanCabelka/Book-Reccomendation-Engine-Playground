@@ -79,7 +79,7 @@ for df,nazev in zip([df_baseline,df_books_books, df_user_user,df_ranking,df_ligh
     both=both.rename(columns={'id':'uid','ISBN':'iid','rating':'true_r','predrating':'est'})
     p,r=precision_and_recall_at_k(both, 10, 4.9)
     m=MAP(both,10,4.9)
-    print("*****",nazev,"*****")
+    print("*****",nazev,"*****")1761
     print(p,r,m)
     
     
